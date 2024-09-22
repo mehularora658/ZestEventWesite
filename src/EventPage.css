@@ -1,0 +1,40 @@
+.container {
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 40px auto; /* Add some margin to the top and bottom, and center the container horizontally */
+  padding: 20px; /* Add some padding to the container */
+}
+
+h1, h2, ol, label, button {
+  margin-bottom: 20px; /* Add some margin to the bottom of each element */
+}
+
+/* Add media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust the maximum width for mobile devices */
+    margin: 20px auto; /* Reduce the margin for mobile devices */
+    padding: 10px; /* Reduce the padding for mobile devices */
+  }
+  h1, h2, ol, label, button {
+    margin-bottom: 10px; /* Reduce the margin for mobile devices */
+  }
+  ol {
+    font-size: 16px; /* Reduce the font size for mobile devices */
+  }
+  button {
+    font-size: 18px; /* Reduce the font size for mobile devices */
+  }
+}
+.register-now{
+
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+
+}
+a{
+  color:white
+}
