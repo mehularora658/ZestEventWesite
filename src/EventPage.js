@@ -148,7 +148,7 @@ const EventPage = () => {
                 </label>
                 <br></br><br></br>
                 <button onClick={handleRegisterClick} disabled={!agreeToRules} className='register-now'>
-                    <a href='https://forms.gle/4Yr77dfpBzxf7WRP9' target='_blank' >
+                    <a href='https://forms.gle/4Yr77dfpBzxf7WRP9' target='_blank' rel="noreferrer">
                         Register now
                     </a>
                 </button>
