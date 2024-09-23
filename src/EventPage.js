@@ -125,14 +125,14 @@ const EventPage = () => {
     return (
         <>
             <nav>
-                <div class="logo">Zest</div>
+                <div class="logo">Carnival 2k24</div>
                 <ul>
 
                 </ul>
             </nav>
-            <div className="container"> {/* Add a container div with a class */}
-                <h1> {eventsName[eventId - 1]}</h1>
-                <p> {eventsDescriptions[eventId - 1]}</p><br></br>
+            <div className="container bgcolor"> {/* Add a container div with a class */}
+                <h1 className='eventpageHeading'> {eventsName[eventId - 1]}</h1>
+                <p className='eventpageDesp'> {eventsDescriptions[eventId - 1]}</p><br></br>
                 <h2>Rules</h2>
                 <ul>
 
@@ -142,16 +142,16 @@ const EventPage = () => {
 
                 </ul>
                 <br></br>
-                <label>
-                    <input type="checkbox" checked={agreeToRules} onChange={handleCheckboxChange} />
-                    Click checkbox to agree you read rules
-                </label>
+
                 <br></br><br></br>
-                <button onClick={handleRegisterClick} disabled={!agreeToRules} className='register-now'>
-                    <a href='https://forms.gle/4Yr77dfpBzxf7WRP9' target='_blank' rel="noreferrer">
-                        Register now
-                    </a>
-                </button>
+                <div className='eventPagebtn'>
+
+                    <button onClick={handleRegisterClick} disabled={!agreeToRules} className='register-now'>
+                        <a href='https://forms.gle/4Yr77dfpBzxf7WRP9' target='_blank' rel="noreferrer">
+                            Register now
+                        </a>
+                    </button>
+                </div>
             </div>
         </>
     );

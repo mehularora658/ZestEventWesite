@@ -5,13 +5,13 @@ const Home = () => {
     return (
         <>
             <nav>
-                <div class="logo">Zest</div>
+                <div class="logo">Carnival 2k24</div>
                 <ul>
 
                 </ul>
             </nav>
             <main>
-                <h1 className='heading'>Informal Events</h1>
+                <h1 className='heading'>INFORMALZ EVENTS</h1>
                 <div class="events-container">
                     <EventBoxes />
                 </div>

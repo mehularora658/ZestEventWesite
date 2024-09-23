@@ -10,11 +10,10 @@ const EventBoxes = () => {
 
         for (let i = 1; i <= 10; i++) {
             eventBoxes.push(
-                // eslint-disable-next-line
                 <div key={i} className="event-box">
-                    <h2> {eventsName[i - 1]}</h2>
-                    <Link to={`/events/${i}`}>
-                        <button className="see-more-btn">See More</button>
+                    <Link className='eventBoxLink' to={`/events/${i}`}>
+                        <h2 classname="eventsBoxHeading"> {eventsName[i - 1]}</h2>
+
                     </Link>
                 </div>
             );
